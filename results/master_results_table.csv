@@ -1,0 +1,9 @@
+Condition,XGBoost F1,RoBERTa F1,Gap
+Same-dataset UNSW,0.9966,0.9948,+0.0018
+Same-dataset CIC,0.9776,0.9745,+0.0031
+Cross UNSW→CIC,0.8116,0.6205,+0.1911
+Cross CIC→UNSW,0.0730,0.0379,+0.0351
+Adversarial ε=0.0,0.9989,0.9971,+0.0018
+Adversarial ε=0.2,0.4509,0.9599,-0.5090
+Adversarial ε=0.5,0.6322,0.8981,-0.2659
+Adversarial ε=1.0,0.0000,0.8419,-0.8419

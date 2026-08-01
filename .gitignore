@@ -1,0 +1,39 @@
+# Datasets and cached samples - too big to commit; download separately.
+data/*.parquet
+data/*.csv
+data/*.zip
+
+# Trained models - can regenerate; too big.
+models/*
+!models/.gitkeep
+
+# Output caches (regenerable).
+data/ids_output/
+*.joblib
+*.pt
+*.safetensors
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Credentials - never commit these
+.env
+*.key
+*token*

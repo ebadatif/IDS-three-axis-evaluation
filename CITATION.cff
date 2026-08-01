@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or its findings, please cite as below."
+title: "IDS Three-Axis Evaluation: A Stress Test of LLM vs Classical Intrusion Detection"
+authors:
+  - family-names: "<Last name>"
+    given-names: "<First name>"
+    # affiliation: "<University>"
+  - family-names: "<Last name>"
+    given-names: "<First name>"
+    # affiliation: "<University>"
+version: 1.0.0
+date-released: 2026-08-01
+repository-code: "https://github.com/Nukka2005/ids-three-axis-eval"
+license: MIT
+keywords:
+  - intrusion detection
+  - network security
+  - machine learning
+  - large language models
+  - adversarial robustness
+  - cross-dataset generalization
+  - NetFlow

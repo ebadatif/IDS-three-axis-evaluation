@@ -1,0 +1,4 @@
+set,n_feat,same_dataset_f1,cross_dataset_f1,cross_fnr
+A_drop_TTL_only,36,0.9972,0.0853,0.9229
+B_drop_TTL_pktlen,32,0.9972,0.0288,0.9847
+C_drop_aggressive,29,0.9966,0.8221,0.138
