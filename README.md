@@ -124,10 +124,10 @@ If you use this code or the findings, please cite:
   title = {Same Benchmark, Different Verdict: A Three-Axis Stress Test of LLM
            versus Classical Intrusion Detection under Distribution Shift and
            Adversarial Evasion},
-  author = {<Your names>},
+  author = {Muhammad Ebad Atif & Muhammad Haider Ali},
   year = {2026},
   note = {arXiv preprint (forthcoming)},
-  url = {https://github.com/<your-user>/ids-three-axis-eval}
+  url = {https://github.com/Nukka2005/ids-three-axis-eval}
 }
 ```
 
