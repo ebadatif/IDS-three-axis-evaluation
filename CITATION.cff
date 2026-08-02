@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or its findings, please cite as below."
-title: "IDS Three-Axis Evaluation: A Stress Test of LLM vs Classical Intrusion Detection"
+title: "IDS Three-Axis Evaluation: A Stress Test of LLM vs Classical ML for Intrusion Detection"
 authors:
   - family-names: "Atif"
     given-names: "Muhammad Ebad"
