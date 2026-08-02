@@ -121,7 +121,9 @@ If you use this code or the findings, please cite:
 
 ```bibtex
 @misc{atif2026ids,
-  title = {Same Benchmark, Different Verdict: A Three-Axis      Stress Test of LLM vs Classical ML for Network Intrusion Detection under Distribution Shift and Adversarial Evasion},
+  title = {Same Benchmark, Different Verdict: A Three-Axis Stress Test of LLM
+           vs Classical ML for Network Intrusion Detection under Distribution
+           Shift and Adversarial Evasion},
   author = {Atif, Muhammad Ebad and Ali, Muhammad Haider},
   year = {2026},
   note = {arXiv preprint (forthcoming)},
