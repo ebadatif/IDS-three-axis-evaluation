@@ -120,14 +120,12 @@ results = run_full_benchmark(
 If you use this code or the findings, please cite:
 
 ```bibtex
-@misc{ids-three-axis-2026,
-  title = {Same Benchmark, Different Verdict: A Three-Axis Stress Test of LLM
-           versus Classical Intrusion Detection under Distribution Shift and
-           Adversarial Evasion},
-  author = {Muhammad Ebad Atif & Muhammad Haider Ali},
+@misc{atif2026ids,
+  title = {Same Benchmark, Different Verdict: A Three-Axis      Stress Test of LLM vs Classical ML for Network Intrusion Detection under Distribution Shift and Adversarial Evasion},
+  author = {Atif, Muhammad Ebad and Ali, Muhammad Haider},
   year = {2026},
   note = {arXiv preprint (forthcoming)},
-  url = {https://github.com/Nukka2005/ids-three-axis-eval}
+  url = {https://github.com/Nukka2005/IDS-three-axis-evaluation}
 }
 ```
 
