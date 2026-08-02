@@ -47,7 +47,7 @@ ids-three-axis-eval/
 ## Setup
 
 ```bash
-git clone https://github.com/<your-user>/ids-three-axis-eval.git
+git clone https://github.com/Nukka2005/ids-three-axis-eval.git
 cd ids-three-axis-eval
 pip install -r requirements.txt
 ```
