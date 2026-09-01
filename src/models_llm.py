@@ -76,31 +76,25 @@ def _compute_metrics(eval_pred):
 
 def train_llm(model, tokenizer, df_train, output_dir,
               seed=DEFAULT_SEED,
-              batch_size=LLM_BATCH_SIZE, epochs=LLM_EPOCHS, lr=LLM_LR,
-              val_size=4000):
+              batch_size=LLM_BATCH_SIZE, epochs=LLM_EPOCHS, lr=LLM_LR):
     """Fine-tune RoBERTa+LoRA on a flow dataset.
 
-    Uses 70/30 train/val split from df_train. The val subset is capped to
-    4000 rows to keep evaluation fast between epochs.
+    Trains on 100% of df_train (no held-out validation split). Since there's
+    no eval_dataset, per-epoch evaluation and "load best model" are disabled;
+    checkpoints are just saved at the end of each epoch and the final model
+    (last epoch) is what gets returned/persisted.
     """
-    tr_df, val_df = train_test_split(
-        df_train, test_size=0.3, random_state=seed, stratify=df_train[LABEL],
-    )
-
-    train_ds = FlowDataset(tr_df, tokenizer, seed=seed)
-    val_ds = FlowDataset(val_df, tokenizer, seed=seed, n=val_size)
+    train_ds = FlowDataset(df_train, tokenizer, seed=seed)
 
     args = TrainingArguments(
         output_dir=output_dir,
         num_train_epochs=epochs,
         per_device_train_batch_size=batch_size,
-        per_device_eval_batch_size=batch_size * 2,
         learning_rate=lr,
         logging_steps=100,
-        eval_strategy="epoch",
+        eval_strategy="no",
         save_strategy="epoch",
-        load_best_model_at_end=True,
-        metric_for_best_model="f1",
+        load_best_model_at_end=False,
         optim="adamw_torch",
         fp16=True,             # Trainer manages this; model must load in fp32.
         report_to="none",
@@ -110,14 +104,12 @@ def train_llm(model, tokenizer, df_train, output_dir,
         model=model,
         args=args,
         train_dataset=train_ds,
-        eval_dataset=val_ds,
-        compute_metrics=_compute_metrics,
     )
     trainer.train()
 
     model.save_pretrained(output_dir)
     tokenizer.save_pretrained(output_dir)
-    return model, val_df
+    return model
 
 
 def load_trained(adapter_dir, model_name=LLM_MODEL_NAME):

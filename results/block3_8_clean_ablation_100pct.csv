@@ -1,0 +1,4 @@
+set,n_feat,SD_f1,CD_f1,CD_fnr
+A_drop_TTL_only,36,0.9972,0.0488,0.9656
+B_drop_TTL_pktlen,32,0.9972,0.0282,0.9851
+C_drop_aggressive,29,0.9966,0.8116,0.1293
