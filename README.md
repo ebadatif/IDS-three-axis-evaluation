@@ -48,29 +48,31 @@ adversary who can manipulate flow features → RoBERTa, inference-budget
 permitting (RoBERTa is roughly 5,800× slower at inference).
 
 ## Repository structure
+
+```text
 ids-three-axis-eval/
-├── src/ # Reusable Python modules
-│ ├── config.py # Paths, feature list, hyperparameters
-│ ├── data_loading.py # Streaming loader, overflow fix
-│ ├── flow_serialization.py # Flow → text for the LLM
-│ ├── evaluation.py # Fair evaluation harness
-│ ├── models_classical.py # RF, XGBoost, feature ablation
-│ ├── models_llm.py # RoBERTa + LoRA training and inference
-│ ├── adversarial.py # Feature-space evasion attack
-│ └── figures.py # All five paper figures
+├── src/                        # Reusable Python modules
+│   ├── config.py               # Paths, feature list, hyperparameters
+│   ├── data_loading.py         # Streaming loader, overflow fix
+│   ├── flow_serialization.py   # Flow → text for the LLM
+│   ├── evaluation.py           # Fair evaluation harness
+│   ├── models_classical.py     # RF, XGBoost, feature ablation
+│   ├── models_llm.py           # RoBERTa + LoRA training and inference
+│   ├── adversarial.py          # Feature-space evasion attack
+│   └── figures.py              # All five paper figures
 ├── scripts/
-│ └── run_pipeline.py # End-to-end runner
+│   └── run_pipeline.py         # End-to-end runner
 ├── notebooks/
-│ └── main_pipeline.ipynb # Original exploratory notebook
-├── data/ # (Download datasets here)
-├── models/ # Trained models saved here
-├── results/ # CSV outputs saved here
-├── figures/ # Paper figures saved here
+│   └── main_pipeline.ipynb     # Original exploratory notebook
+├── data/                       # (Download datasets here)
+├── models/                     # Trained models saved here
+├── results/                    # CSV outputs saved here
+├── figures/                    # Paper figures saved here
 ├── docs/
-│ └── RESEARCH_LOG.md # Decisions, findings, reasoning
+│   └── RESEARCH_LOG.md         # Decisions, findings, reasoning
 ├── requirements.txt
 └── LICENSE
-
+```
 
 ## Setup
 
@@ -228,7 +230,7 @@ If you use this code or the findings, please cite:
 }
 ```
 
-*(arXiv ID above is a placeholder —  will be updating it once the preprint is posted.)*
+*(arXiv ID above is a placeholder — update once the preprint is posted.)*
 
 ## License
 
