@@ -63,7 +63,7 @@ ids-three-axis-eval/
 ├── scripts/
 │   └── run_pipeline.py         # End-to-end runner
 ├── notebooks/
-│   └── main_pipeline.ipynb     # Original exploratory notebook
+│   └── pipeline.ipynb     # Original exploratory notebook
 ├── data/                       # (Download datasets here)
 ├── models/                     # Trained models saved here
 ├── results/                    # CSV outputs saved here
