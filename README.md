@@ -230,7 +230,7 @@ If you use this code or the findings, please cite:
 }
 ```
 
-*(arXiv ID above is a placeholder — update once the preprint is posted.)*
+*(arXiv ID above is a placeholder — will be updating once the preprint is posted.)*
 
 ## License
 
