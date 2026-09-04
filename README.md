@@ -3,7 +3,7 @@
 Cross-dataset and adversarial evaluation of RoBERTa-LoRA vs XGBoost for
 network intrusion detection.
 
-Companion code for: *"Same Benchmark, Different Verdict: A Three-Axis
+Companion code for: *"A Three-Axis
 Stress Test of LLM vs Classical ML for Network Intrusion Detection under
 Distribution Shift and Adversarial Evasion"* (Atif & Ali, 2026).
 
